@@ -5,7 +5,7 @@ server:
   port: ${SERVER_PORT:8081}
 spring:
   datasource:
-    url: jdbc:postgresql://${POSTGRE_IP}:${POSTGRE_PORT}/registration
+    url: jdbc:postgresql://${POSTGRE_IP}:${POSTGRE_PORT}/${DB_NAME}
     username: ${POSTGRE_USER}
     password: ${POSTGRE_PASSWORD}
   rabbitmq:
